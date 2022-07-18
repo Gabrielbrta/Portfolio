@@ -1,0 +1,16 @@
+:root {
+  --outfit: 'Outfit', Arial, Helvetica, sans-serif;
+  --jetbrains: 'JetBrains Mono', monospace;
+
+  --azul-neon: #79E1E5;
+  --rosa-neon: #FF6995;
+  --bg-vetor: #F2F2F2;
+  --js: #EFD81D;
+  --css: #006EB4;
+  --git: #E44D30;
+  --html: #E56027;
+}
+
+body {
+  background: #000000;
+}
