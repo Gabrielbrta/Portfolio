@@ -1,0 +1,118 @@
+.sobre {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20rem;
+}
+
+.sobre img {
+  position: absolute;
+}
+
+.sobre-fundo2 {
+  left: 0px;
+}
+
+.sobre-fundo1 {
+  right: 0px;
+}
+
+.sobre-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: var(--azul-neon);
+  filter: drop-shadow(0 0 4px var(--azul-neon));
+  padding-top: 1.62rem;
+}
+
+.tag.top {
+  width: 20px;
+  margin-top: 70px;
+}
+
+.tag {
+  width: 20px;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.sobre code + mark {
+  font-family: var(--jetbrains);
+}
+
+.sobre p.sobre-conteudo {
+  max-width: 100%;
+  margin: 35px auto;
+  font-size: 2.25rem;
+  text-align: left;
+  font-weight: 200;
+  color: #e5e5e5;
+}
+
+span.sobre-mark {
+  color: #FFF;
+  font-weight: 400;
+}
+
+span.mark-blue {
+  color: var(--azul-neon);
+  font-weight: 400;
+}
+
+span.mark-pink {
+  color: var(--rosa-neon);
+  font-weight: 400;
+}
+
+
+@media (max-width: 1150px) {
+  .sobre-fundo2 {
+    left: -10%;
+    transform: scale(.5);
+  }
+  
+  .sobre-fundo1 {
+    right: 0%;
+    transform: scale(.5);
+  }
+
+  .sobre p.sobre-conteudo {
+    padding: 0 30px;
+  }
+  .tag,.tag.top {
+    width: 80%;
+    padding: 0 30px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    overflow-x: hidden;
+  }
+
+  .sobre h2 {
+    font-size: 2.5rem;
+  }
+
+  .sobre p.sobre-conteudo {
+    font-size: 1rem;
+    max-width: 320px;
+  }
+
+  .sobre-fundo2 {
+    left: -10%;
+    transform: scale(.3);
+  }
+  
+  .sobre-fundo1 {
+    right: 0px;
+    transform: scale(.3);
+  }
+}
