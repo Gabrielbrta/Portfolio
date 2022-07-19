@@ -1,0 +1,108 @@
+.tecnologias {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 21rem;
+}
+
+.tecnologias h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  filter: drop-shadow(0 0 4px var(--azul-neon));
+  color: var(--azul-neon);
+}
+
+.tech-icons {
+  position: relative;
+  max-width: 680px;
+  margin: 5rem auto 6.87rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tech-icons li img {
+  transition: .2s;
+}
+
+.tech-icons li img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.line {
+  width: 600px;
+  overflow: hidden;
+  height: 2px;
+  background: var(--bg-vetor);
+  position: absolute;
+  bottom: 0;
+  left: -110%;
+}
+
+.line2 {
+  width: 600px;
+  height: 2px;
+  background: var(--bg-vetor);
+  position: absolute;
+  bottom: 0;
+  right: -110%;
+}
+
+[data-anime="click"] {
+  position: absolute;
+  bottom: -100%;
+  animation: click 3s ease-in-out forwards;
+}
+
+@keyframes click {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(600px);
+    opacity: 0;
+  }
+}
+
+.tech-descricao.active{
+  display: block;
+}
+
+.mark-green {
+  color: #3ADB53;
+}
+
+.mark-css {
+  color: var(--css);
+}
+
+.mark-html {
+  color: var(--html);
+}
+
+.mark-git {
+  color: var(--git);
+}
+
+.mark-figma {
+  color: #A259FF;
+}
+
+.tech-descricao {
+  display: none;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tech-descricao h3{
+  color: var(--js);
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.tech-descricao p {
+  font-size: 1.75rem;
+  margin: 20px 0 40px 0;
+  color: #e5e5e5;
+  font-weight: 300;
+}

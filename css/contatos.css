@@ -1,0 +1,49 @@
+.contatos {
+  width: 100%;
+}
+
+.contatos h2 {
+  text-align: center;
+  color: var(--azul-neon);
+  font-size: 4.5rem;
+  font-weight: 300;
+  filter: drop-shadow(0 0 4px var(--azul-neon));
+  margin-bottom: 50px;
+}
+
+.container-contatos {
+  max-width: 1200px;
+  margin: 100px auto 300px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxes {
+  max-width: 472px;
+  width: 100%;
+}
+
+.box-contatos {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 88px;
+  background: var(--bg-vetor);
+  padding: 32px 76px;
+  margin: 10px 0px
+}
+.container-contatos p {
+  color: #000000;
+  margin: 8px;
+}
+
+.container-contatos p.titulo-contato {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.container-contatos p.descricao {
+  font-size: 1rem;
+  font-weight: 400;
+} 
