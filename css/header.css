@@ -29,6 +29,10 @@ header {
   padding: 27px 5px;
 }
 
+.btn-menu {
+  display: none;
+}
+
 .header ul li a:hover{
   filter: drop-shadow(0 0 5px var(--azul-neon));
 }
@@ -37,7 +41,7 @@ header {
   margin-left: 80px;
 }
 
-.header img {
+.header img.icone-header {
   position: absolute;
   z-index: 2;
   left: 100px;
@@ -65,5 +69,47 @@ header {
   .header ul {
     justify-content: end;
     margin-right: 100px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  header {
+    padding: 27px 0px;
+    align-items: center;
+    border-bottom: 3px solid var(--rosa-neon);
+  }
+
+  header ul li {
+    display: none;
+  }
+
+  .header ul {
+    margin: 0 20px 0 0;
+  }
+
+  .btn-menu {
+    display: block;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+
+  .btn-menu img {
+    height: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-bg {
+    transform: scale(.7);
+    left: -20%;
+    top: -30px;
+  }
+
+  .header img.icone-header {
+    transform: scale(.8);
+    left: 20px;
   }
 }

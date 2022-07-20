@@ -15,12 +15,13 @@
   <a href="#"><img data-inicio class="arrow-home" src="./img/icones/arrow.svg" alt="seta para voltar ao inicio"></a>
   <header>
     <div class="header">
-      <img src="./img/icones/logo-header.png" alt="icone da letra C">
+      <img class="icone-header" src="./img/icones/logo-header.png" alt="icone da letra C">
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#tecnologias">Tecnologias</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a class="contate-me" href="#contatos">Contate-me</a></li>
+        <button class="btn-menu"><img src="./img/icones/hamburguer.svg" alt="menu"></button>
       </ul>
     </div>
   </header>
@@ -30,34 +31,38 @@
     <section class="home-conteudo">
       <div class="left-home">
         <h1 class="titulo-home">
-  <pre>
-  <code class="apresentacao">
-  <code data-writter><</code><mark>h1</mark>>
-  Olá, Mundo!
-  Eu sou
-  <span class="nome-home">Gabriel Correa</span>
-  Front-End Developer
-  <code><</code>/<mark>h1</mark>>
-  </pre>
-  </h1>
-  </code>
-        <div class="button-download">
-          <a href="./curriculo-gabriel.pdf" download="curriculo-gabriel.pdf" type="application/pdf">
+        <div class="apresentacao">
+        <code data-writter><</code><mark>h1</mark>>
+        <p>Olá, Mundo!</p>
+        <p>Eu sou</p>
+        <p><span class="nome-home">Gabriel Correa</span></p>
+        <p>Front-End Developer</p>
+        <code><</code>/<mark>h1</mark>>
+        </h1>
+      </div>
+        <div class="button-download active">
+          <div class="icons-mobile">
+            <a target="_blank" href="https://www.linkedin.com/in/gabrielbrta/">
+              <img src="./img/icones/linkedin-mobile.svg" alt="icone do linkedin">
+            </a>
+            <a target="_blank" href="https://github.com/Gabrielbrta">
+              <img src="./img/icones/github-mobile.svg" alt="icone do github">
+            </a>
+          </div>
+          <a class="download" href="./curriculo-gabriel.pdf" download="curriculo-gabriel.pdf" type="application/pdf">
             DOWNLOAD CV
           </a>
         </div>
       </div>
       <div class="ilustracao-home">
         <img src="./img/icones/foto-gabriel-home.svg" alt="foto de gabriel correa">
-        <a target="_blank" href="https://www.linkedin.com/in/gabrielbrta/">
+        <a class="icon" target="_blank" href="https://www.linkedin.com/in/gabrielbrta/">
           <picture>
-            <source media="(max-width: 750px)" srcset="./img/icones/linkedin-mobile.svg">
             <img src="./img/icones/linkedin-desktop.svg" alt="icone do linkedin">
           </picture>
         </a>
-        <a target="_blank" href="https://github.com/Gabrielbrta">
+        <a class="icon" target="_blank" href="https://github.com/Gabrielbrta">
           <picture>
-            <source media="(max-width: 750px)" srcset="./img/icones/github-mobile.svg">
           <img src="./img/icones/github-desktop-home.svg" alt="icone do github">
           </picture>
         </a>
