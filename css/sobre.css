@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   margin-bottom: 20rem;
+  overflow: hidden;
 }
 
 .sobre img {
@@ -9,16 +10,28 @@
 }
 
 .sobre-fundo2 {
-  left: 0px;
+  left: -30%;
+  top: 30px;
+}
+
+.sobre-titulo {
+  position: relative;
+  max-width: 1200px;
+  text-align: center;
 }
 
 .sobre-fundo1 {
-  right: 0px;
+  right: -30%;
+  top: 30px;
 }
 
 .sobre-container {
   max-width: 950px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .sobre h2 {
@@ -46,7 +59,7 @@
 }
 
 .sobre p.sobre-conteudo {
-  max-width: 100%;
+  width: 100%;
   margin: 35px auto;
   font-size: 2.25rem;
   text-align: left;
@@ -73,46 +86,62 @@ span.mark-pink {
 @media (max-width: 1150px) {
   .sobre-fundo2 {
     left: -10%;
-    transform: scale(.5);
+  }
+
+  .sobre-wrapper {
+    max-width: 950px;
+    width: 90%;
   }
   
   .sobre-fundo1 {
-    right: 0%;
-    transform: scale(.5);
+    right: -10%;
   }
 
   .sobre p.sobre-conteudo {
+    width: 100%;
     padding: 0 30px;
+    font-size: 1.5rem;
   }
   .tag,.tag.top {
-    width: 80%;
-    padding: 0 30px;
+    padding: 0 40px 0 40px;
     text-align: left;
-    margin: 0 auto;
   }
 }
 
 @media (max-width: 650px) {
-  main {
-    overflow-x: hidden;
-  }
 
   .sobre h2 {
     font-size: 2.5rem;
   }
 
+  .tag,.tag.top {
+    padding: 0 40px 0 40px;
+    font-size: .875rem;
+    width: 0;
+  }
+
+  .sobre-wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
   .sobre p.sobre-conteudo {
     font-size: 1rem;
-    max-width: 320px;
+    width: 300px;
+    padding: 0;
   }
 
   .sobre-fundo2 {
-    left: -10%;
-    transform: scale(.3);
+    left: -30%;
+    transform: scale(.4);
+    top: -80%;
   }
   
   .sobre-fundo1 {
-    right: 0px;
-    transform: scale(.3);
+    right: -30%;
+    top: -80%;
+    transform: scale(.4);
   }
 }
