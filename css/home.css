@@ -8,10 +8,15 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  height: 726px;
+  height: 850px;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.left-home {
+  font-size: 2rem;
 }
 
 h1.titulo-home h1{
@@ -20,9 +25,8 @@ h1.titulo-home h1{
 }
 
 .ilustracao-home img {
-  position: relative;
-  right: -90px;
-  z-index: 3;
+  position: static;
+  max-width: 415px;
   animation: float 5s ease-in-out infinite alternate;
 }
 
@@ -49,13 +53,14 @@ mark {
   font-family: var(--jetbrains);
 }
 
-code.apresentacao {
+div.apresentacao p {
   font-family: var(--jetbrains);
   font-size: 3.12rem;
   margin-left: 0px;
+  text-indent: 30px;
 }
 
-code span.nome-home {
+div p span.nome-home {
   color: var(--azul-neon);
   font-size: 3.75rem;
   font-family: var(--jetbrains);
@@ -64,12 +69,13 @@ code span.nome-home {
 }
 
 .button-download {
-  width: 100%;
+  width: 50%;
   display: flex;
+  order: 3;
   justify-content: center;
 }
 
-.button-download a {
+.button-download a.download {
   display: inline-block;
   font-size: 1.375rem;
   font-weight: bold;
@@ -81,9 +87,13 @@ code span.nome-home {
   transition: .3s;
 }
 
-.button-download a:hover{
+.button-download a.download:hover{
   background: transparent;
   color: var(--bg-vetor);
+}
+
+.button-download.active div.icons-mobile {
+  display: none;
 }
 
 .divisor {
@@ -123,47 +133,138 @@ code span.nome-home {
 
 @media (max-width: 1200px) {
   .home-conteudo {
-   flex-wrap: nowrap;
-   max-width: 80%;
-  } 
-  code.apresentacao {
-    font-size: 1.6rem;
-  }
-  .ilustracao-home img {
-    max-width: 300px;
+   align-items: flex-start;
+   justify-content: space-between;
+   width: 100%;
   }
 
-  code span.nome-home {
+  div.apresentacao p{
+    font-size: 2rem;
+    order: 3;
+  }
+
+  .ilustracao-home img {
+    max-width: 415px;
+  }
+
+  .left-home, h1.titulo-home {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+
+  div p span.nome-home {
     font-size: 2rem;
   }
 
   .button-download  {
-    justify-content: end;
-    align-content: flex-end;
+    align-items: flex-start;
   }
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 960px) {
   .home-bg {
     display: none;
   }
 
-  .left-home {
-    order: 2;
-    margin-top: 40px;
+  .arrow-home {
+    width: 30px;
+    right: 0;
+  }
+
+  .home-conteudo {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 600px;
+    justify-content: center;
+  }
+
+  div.apresentacao , div.apresentacao p, .nome-home{
+    font-size: 1.5rem;
+    font-family: var(--jetbrains);
+    margin-right: 18px;
+  }
+
+  div.apresentacao p {
+    text-indent: 10px;
+    line-height: 42px;
   }
 
   .ilustracao-home img { 
     order: -1;
-    margin-top: 200px;
     position: static;
+    max-width: 280px;
+    animation: none;
   }
 
-  .home-conteudo {
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  a.icon {
+    display: none;
   }
+
+  .left-home {
+    display: flex;
+    order: 2;
+    margin: 20px 0;
+    max-width: 400px;
+    align-self: center;
+  }
+
+  .button-download.active a.download{
+    order: 3;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 1.125rem;
+  }
+
+  .button-download.active {
+    display: grid; 
+    grid-template-columns: minmax(300px, 500px);
+    place-items: end;
+  }
+
+  .button-download.active div.icons-mobile{
+    display: flex;
+    
+  }
+
+   div.icons-mobile a img {
+    width: 35px;
+    margin: 0 0 10px 8px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .home-conteudo {
+    width: 80%;
+  }
+
+  .left-home{
+    width: 100%;
+    align-self: flex-start; 
+  }
+
+  div.apresentacao {
+    width: 264px;
+  }
+
+  div.apresentacao p {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+
+  div.apresentacao span.nome-home {
+    font-size: 1.5rem;
+  }
+
+  .ilustracao-home img {
+    max-width: 250px;
+  }
+
+  h1.tituto-home {
+    margin: 0;
+  }
+
 }
