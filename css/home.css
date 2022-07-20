@@ -239,6 +239,11 @@ div p span.nome-home {
 @media (max-width: 450px) {
   .home-conteudo {
     width: 80%;
+    height: 560px;
+  }
+
+  .divisor {
+    margin-top: 200px;
   }
 
   .left-home{
@@ -261,6 +266,7 @@ div p span.nome-home {
 
   .ilustracao-home img {
     max-width: 250px;
+    margin-top: 220px;
   }
 
   h1.tituto-home {
