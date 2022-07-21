@@ -18,3 +18,13 @@
 .footer-container p {
   margin-left: 5px;
 }
+
+@media (max-width: 375px) {
+  .footer-container{
+    font-size: 1rem;
+  }
+
+  .footer-container img {
+    width: 15px;
+  }
+}

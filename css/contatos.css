@@ -47,3 +47,42 @@
   font-size: 1rem;
   font-weight: 400;
 } 
+
+@media (max-width: 920px) {
+  .container-contatos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .contatos h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .ilustracao-contato {
+    width: 220px;
+  }
+
+  .boxes {
+    width: 300px;
+  }
+
+  .box-contatos {
+    padding: 10px 20px;
+  }
+
+  .box-icone img {
+    width: 45px;
+  }
+
+  .conteudo-contatos p.titulo-contato  {
+    font-size: 1.2rem;
+  }
+  .conteudo-contatos p.descricao {
+    font-size: .875rem;
+  }
+}
