@@ -140,6 +140,7 @@ header {
     cursor: pointer;
     width: 25px;
   }
+  
   nav.menu-mobile.active ul {
     display: flex;
     flex-direction: column;
