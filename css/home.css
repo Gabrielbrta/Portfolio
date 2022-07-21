@@ -32,10 +32,10 @@ h1.titulo-home h1{
 
 @keyframes float {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
 
@@ -149,7 +149,6 @@ div p span.nome-home {
 
   .left-home, h1.titulo-home {
     font-size: 2rem;
-    margin-left: 20px;
   }
 
   div p span.nome-home {
@@ -242,8 +241,13 @@ div p span.nome-home {
     height: 560px;
   }
 
+  img.arrow-home {
+    right: 20px;
+  }
+
   .divisor {
     margin-top: 200px;
+    height: 20px;
   }
 
   .left-home{
