@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .tech-icons li img {
   transition: .2s;
 }
@@ -105,4 +106,32 @@
   margin: 20px 0 40px 0;
   color: #e5e5e5;
   font-weight: 300;
+}
+
+@media (max-width: 725px) {
+  .tech-icons {
+    margin: 5rem 30px;
+  }
+
+  div.line, div.line2 {
+    display: none;
+  }
+
+  .tecnologias h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-icons {
+    align-items: center;
+  }
+
+  .tech-icons li img {
+    width: 45px;
+  }
+
+  [data-anime="click"] {
+    width: 45px;
+  }
 }
