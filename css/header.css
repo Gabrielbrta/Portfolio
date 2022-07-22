@@ -3,6 +3,7 @@ header {
   z-index: 1;
   width: 100%;
   border-bottom: 2px solid var(--rosa-neon);
+  filter: drop-shadow(0 0 5px, #FF6995);
 }
 
 .header {
@@ -12,7 +13,6 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  filter: drop-shadow(0 0 5px, #FF6995);
 }
 
 .header ul {
@@ -61,6 +61,10 @@ header {
   top: 0px;
 }
 
+nav.menu-mobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header ul li + li {
     margin-left: 30px;
@@ -101,9 +105,6 @@ header {
   }
   
  /* Menu mobile =========================*/
-  nav.menu-mobile {
-    display: none;
-  }
 
   nav.menu-mobile.active {
     display: block;
