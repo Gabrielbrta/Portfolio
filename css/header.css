@@ -3,6 +3,7 @@ header {
   z-index: 1;
   width: 100%;
   border-bottom: 2px solid var(--rosa-neon);
+  filter: drop-shadow(0 0 5px, #FF6995);
 }
 
 .header {
@@ -12,7 +13,6 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  filter: drop-shadow(0 0 5px, #FF6995);
 }
 
 .header ul {
@@ -61,6 +61,10 @@ header {
   top: 0px;
 }
 
+nav.menu-mobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header ul li + li {
     margin-left: 30px;
@@ -99,6 +103,81 @@ header {
   .btn-menu img {
     height: 20px;
   }
+  
+ /* Menu mobile =========================*/
+
+  nav.menu-mobile.active {
+    display: block;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    height: 300px;
+    width: 200px;
+    z-index: 15;
+    border: 2px solid white;
+    background: #000;
+    animation: menuInOut .4s ease-in-out forwards;
+  }
+
+  @keyframes menuInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+  button.btn-fechar {
+    background: #000;
+    border: none;
+    width: 85%;
+    margin: 10px 0px 0px 10px;
+    text-align: right;
+  } 
+
+  .btn-fechar img {
+    cursor: pointer;
+    width: 25px;
+  }
+  
+  nav.menu-mobile.active ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  nav.menu-mobile.active ul li {
+    margin: 5px 0px;
+  }
+
+  nav.menu-mobile.active ul li a {
+    color: var(--azul-neon);
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 8px 0px;
+  }
+
+  nav.menu-mobile.active ul li::before {
+    content: '';
+    margin: 0px 10px 5px 5px;
+    display: inline-block;
+    width: 5px;
+    border-radius: 4px;
+    height: 5px;
+    background: white;
+  }
+
+  nav.menu-mobile.active ul li a.contate-me {
+    font-size: 1.5rem;
+    color: var(--rosa-neon);
+    filter: drop-shadow(0 0 2px #FF6995);
+    font-weight: bold;
+  } 
 }
 
 @media (max-width: 450px) {
