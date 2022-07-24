@@ -9,7 +9,6 @@ export default function initAnimateScroll() {
         const distanceItem = item.getBoundingClientRect().top;
         const windowHeight = window.innerHeight * 0.8;
         if (distanceItem < windowHeight) item.classList.add('active');
-        else item.classList.remove('active');
       });
     }
     handleAnime();
