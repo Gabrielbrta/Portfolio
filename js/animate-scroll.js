@@ -1,8 +1,9 @@
-import debounce from "./dobounce.js";
+import debounce from './dobounce.js';
+
 export default function initAnimateScroll() {
   const animateElements = document.querySelectorAll('[data-anime]');
 
-  if(animateElements.length) {
+  if (animateElements.length) {
     function handleAnime() {
       animateElements.forEach((item) => {
         const distanceItem = item.getBoundingClientRect().top;
@@ -12,6 +13,6 @@ export default function initAnimateScroll() {
       });
     }
     handleAnime();
-    window.addEventListener('scroll', debounce(handleAnime, 200))
+    window.addEventListener('scroll', debounce(handleAnime, 200));
   }
 }

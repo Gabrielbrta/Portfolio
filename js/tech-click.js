@@ -1,10 +1,10 @@
 export default function navigationTech() {
-  const icons =  document.querySelectorAll('[data-tech="icon"]')
-  const descriptions =  document.querySelectorAll('[data-tech="description"]')
+  const icons = document.querySelectorAll('[data-tech="icon"]');
+  const descriptions = document.querySelectorAll('[data-tech="description"]');
 
   if (icons.length && descriptions.length) {
     icons.forEach((icon, index) => {
-      icon.addEventListener("click", () => {
+      icon.addEventListener('click', () => {
         descriptions.forEach((desc) => {
           desc.classList.remove('active');
         });
