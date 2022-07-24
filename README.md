@@ -14,6 +14,7 @@ Acho que estava faltando no meu repositório.
 <li>HTML</li>
 <li>CSS</li>
 <li>Figma / Eu fiz o prototipo no figma</li>
+<li>Node/NPM</li>
 
 ## Link do site
 ### <a href="https://gabrielbrta.github.io/Portfolio/">Portfólio</a>
