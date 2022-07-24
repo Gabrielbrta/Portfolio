@@ -135,7 +135,21 @@ div p span.nome-home {
 @media (min-width: 1900px) {
   .home-conteudo {
     max-width: 1600px;
+    align-content: center;
+    justify-content: space-between;
   }
+
+  .ilustracao-home img {
+    animation: none;
+    position: relative;
+    z-index: 3;
+  }
+  .button-download {
+    justify-content: end;
+  }
+  .left-home {
+    margin-left: 300px;
+  } 
 }
 
 @media (max-width: 1200px) {
