@@ -82,6 +82,15 @@ span.mark-pink {
   font-weight: 400;
 }
 
+@media (min-width: 1500px) {
+  .sobre-fundo2 {
+    left: -55%;
+  }
+  .sobre-fundo1 {
+    right: -55%;
+  }
+}
+
 @media (max-width: 1150px) {
   .sobre-fundo2 {
     left: -10%;

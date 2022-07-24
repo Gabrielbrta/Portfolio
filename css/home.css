@@ -132,6 +132,12 @@ div p span.nome-home {
   }
 }
 
+@media (min-width: 1900px) {
+  .home-conteudo {
+    max-width: 1600px;
+  }
+}
+
 @media (max-width: 1200px) {
   .home-conteudo {
    align-items: flex-start;

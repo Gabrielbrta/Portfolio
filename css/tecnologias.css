@@ -30,6 +30,7 @@
 }
 
 .line {
+  display: none;
   width: 600px;
   overflow: hidden;
   height: 2px;
@@ -41,6 +42,7 @@
 }
 
 .line2 {
+  display: none;
   width: 600px;
   height: 2px;
   background: var(--bg-vetor);
@@ -51,7 +53,8 @@
 }
 
 .line2.active, .line.active {
-  animation: fill .3s ease-in forwards;
+  display: block;
+  animation: fill .5s ease-in forwards;
 }
 
 @keyframes fill {
@@ -59,12 +62,16 @@
     width: 0%;
   }
   100% {
-    min-width: 100%;
+    width: 100%;
   }
 }
+.click {
+  display: none;
+}
 
-[data-anime="click"] {
+.click.active {
   position: absolute;
+  display: block;
   bottom: -100%;
   animation: click 3s ease-in-out forwards;
 }
