@@ -51,7 +51,7 @@
 }
 
 .line2.active, .line.active {
-  animation: fill 1s ease-in forwards;
+  animation: fill .3s ease-in forwards;
 }
 
 @keyframes fill {

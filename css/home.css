@@ -111,7 +111,7 @@ div p span.nome-home {
   height: 2px;
   background: var(--rosa-neon);
   filter: drop-shadow(0 0 3px var(--rosa-neon));
-  animation: divisor 2s ease-in forwards;
+  animation: divisor .5s ease-in forwards;
 }
 
 .divisor.active .blue {
@@ -120,7 +120,7 @@ div p span.nome-home {
   background: var(--azul-neon);
   filter: drop-shadow(0 0 3px var(--azul-neon));
   align-self: flex-end;
-  animation: divisor 2s ease-in forwards;
+  animation: divisor .5s ease-in forwards;
 }
 
 @keyframes divisor {
