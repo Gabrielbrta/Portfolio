@@ -76,7 +76,7 @@
   }
 
   .box-icone img {
-    width: 45px;
+    max-width: 45px;
   }
 
   .conteudo-contatos p.titulo-contato  {
