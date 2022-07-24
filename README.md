@@ -16,4 +16,4 @@ Acho que estava faltando no meu repositório.
 <li>Figma / Eu fiz o prototipo no figma</li>
 
 ## Link do site
-### <a href="">Portfólio</a>
+### <a href="https://gabrielbrta.github.io/Portfolio/">Portfólio</a>
