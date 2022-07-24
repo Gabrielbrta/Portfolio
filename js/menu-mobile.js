@@ -9,7 +9,6 @@ export default function initMenuMobile() {
     function toggleMenu(event) {
       event.preventDefault();
       menuMobile.classList.toggle('active');
-      console.log(event.target.index);
     }
 
     function scrollToSection(index) {
