@@ -5,24 +5,26 @@ export default function initMenuMobile() {
   const mobileLinks = document.querySelectorAll('.mobile-links li');
   const sections =  document.querySelectorAll('section[id]');
 
-  function toggleMenu(event) {
-    event.preventDefault();
-    menuMobile.classList.toggle('active');
-    console.log(event.target.index)
-  }
+  if (sections.length && mobileLinks.length) {
+    function toggleMenu(event) {
+      event.preventDefault();
+      menuMobile.classList.toggle('active');
+      console.log(event.target.index)
+    }
+    
+    function scrollToSection(index) {
+      sections[index].scrollIntoView({block:"start", behavior:"smooth"});
+    }
   
-  function scrollToSection(index) {
-    sections[index].scrollIntoView({block:"start", behavior:"smooth"});
+    const events = ['touchstart', 'click'];
+    events.forEach((event) => {
+      btnMenu.addEventListener(event, toggleMenu)
+      btnFechar.addEventListener(event, toggleMenu)
+    });
+    
+    mobileLinks.forEach((item, index) => item.addEventListener("click", (event) => {
+      toggleMenu(event)
+      scrollToSection(index)
+    }));
   }
-
-  const events = ['touchstart', 'click'];
-  events.forEach((event) => {
-    btnMenu.addEventListener(event, toggleMenu)
-    btnFechar.addEventListener(event, toggleMenu)
-  });
-  
-  mobileLinks.forEach((item, index) => item.addEventListener("click", (event) => {
-    toggleMenu(event)
-    scrollToSection(index)
-  }));
 }
