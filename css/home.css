@@ -25,18 +25,9 @@ h1.titulo-home h1{
 }
 
 .ilustracao-home img {
-  position: static;
+  position: relative;
   max-width: 415px;
-  animation: float 5s ease-in-out infinite alternate;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  z-index: 3;
 }
 
 .ilustracao-home a {
