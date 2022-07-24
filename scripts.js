@@ -4,8 +4,9 @@ import initMenuMobile from './js/menu-mobile.js';
 import navigationTech from './js/tech-click.js';
 
 document.documentElement.className = ' js';
-
-machineWritter('.nome-home');
-initAnimateScroll();
-navigationTech();
-initMenuMobile();
+window.onload = () => {
+  machineWritter('.nome-home');
+  initAnimateScroll();
+  navigationTech();
+  initMenuMobile();
+};
