@@ -4,7 +4,7 @@ export default function navigationTech() {
 
   if (icons.length && descriptions.length) {
     icons.forEach((icon, index) => {
-      icon.addEventListener('click', () => {
+      icon.addEventListener('mouseover', () => {
         descriptions.forEach((desc) => {
           desc.classList.remove('active');
         });
