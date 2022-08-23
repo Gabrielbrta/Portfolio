@@ -22,8 +22,8 @@ export default function initMenuMobile() {
     });
 
     mobileLinks.forEach((item, index) => item.addEventListener('click', (event) => {
-      toggleMenu(event);
       scrollToSection(index);
+      toggleMenu(event);
     }));
   }
 }
